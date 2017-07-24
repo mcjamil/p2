@@ -114,7 +114,7 @@ func (h *HookExecContext) Run() {
 		h.logger.WithFields(logrus.Fields{
 			"path":   h.Path,
 			"output": hookOut.String(),
-		}).Debugln("Executed hook")
+		}).Infof("Executed hook")
 	}
 }
 
